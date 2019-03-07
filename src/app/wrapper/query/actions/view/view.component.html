@@ -1,0 +1,14 @@
+<h5>View query </h5>
+
+<!-- <p [style.fontSize]="fontSize" [style.color]="applyColor()" [ngStyle]="{backgroundColor: 'aqua'}" *repeat="data"> I am Bikram </p> -->
+
+<p [class.error]="isNotValid" [ngClass]="classObj" *ngLoop="loopInfo"> I am with ngLoop Directive </p>
+
+<h3>Validator directive</h3>
+<input type="text" value="">
+
+<span>{{"We will do" | uppercase}}</span>
+<br>
+
+<span>{{ObjectArrayForSort | sort : 'obj'}}</span>
+

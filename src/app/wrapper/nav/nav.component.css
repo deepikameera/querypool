@@ -1,0 +1,13 @@
+.bg{
+    background-color: firebrick;
+}
+
+a{
+    color: #d0e2c2;
+    /* font-weight: bold; */
+    font-family: cursive;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+}

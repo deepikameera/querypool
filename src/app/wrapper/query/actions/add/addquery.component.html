@@ -1,0 +1,40 @@
+<div class="card m-auto" style="width:80%">
+    <div class="card-body">
+        <form>
+            <div class="form-group">
+                <label for="query">Query</label>
+                <input-component [id]="idquery" [pHolder]="phquery"></input-component>
+                <label for="type">Type</label> 
+                <!-- <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                    </a>
+                    
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div> -->
+                <select class="form-control">
+                    <option value="selectValue" disabled>Please select</option>
+                    <option value="technology">Technology</option>
+                    <option value="currentAffairs">Current Affairs</option>
+                    <option value="media&entertainment">Media & Entertainment</option>
+                </select>
+                <label for="tags">Tags</label>
+                <input-component [id]="idtag" [pHolder]="phtag" [hideVal]="hidetrue"></input-component>
+                <label for ="answer">Answer</label>
+                <textarea class="form-control" rows="3" id="answer"></textarea>
+                <button type="button" class="btn btn-primary m-auto">Save</button>
+                <input type="text" [class.error]=true>
+                <input type="text" [style.color]="!true?'red':'green'">
+                <input type="text" [style.color] = "applyColor()">
+
+                <label>This is repeat directive</label>
+            
+            </div>
+
+        </form>
+    </div>
+</div>
